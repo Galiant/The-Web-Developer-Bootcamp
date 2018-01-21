@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Register</title>
+</head>
+
+<body>
+  <h1>Register</h1>
+
+  <form action="">
+    <label for="first">First Name</label>
+    <input type="text" id="first" placeholder="John" required>
+    <label for="last">Last Name</label>
+    <input type="text" id="last" placeholder="Smith" required>
+
+    <div>
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="male">
+      <label for="female">Female</label>
+      <input type="radio" name="gender" id="female">
+      <label for="other">Other</label>
+      <input type="radio" name="gender" id="other">
+    </div>
+
+    <div>
+      <label>
+        Email:
+        <input type="email" placeholder="your email" name="email" required>
+      </label>
+      <label>
+        Password:
+        <input type="password" name="password" pattern=".{5,10}" required title="Password must be between 5 and 10 characters">
+      </label>
+    </div>
+
+    <div>
+      <label>
+        Birthday:
+        <select name="Month">
+          <option value="">Month</option>
+          <option value="">Jan</option>
+          <option value="">Feb</option>
+          <option value="">Mar</option>
+        </select>
+        <select name="Day">
+          <option value="">Day</option>
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+        </select>
+        <select name="Year">
+          <option value="">Year</option>
+          <option value="">1999</option>
+          <option value="">2000</option>
+          <option value="">2001</option>
+        </select>
+      </label>
+    </div>
+
+    <div>
+      <label for="agreed">I agreed to the terms and conditions:</label>
+      <input type="checkbox" name="agreed" id="agreed">
+    </div>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</body>
+
+</html>
