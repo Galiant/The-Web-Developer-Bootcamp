@@ -6,6 +6,6 @@ gulp.task("serve", function() {
   browserSync.init({
     proxy: "http://the-web-developer-bootcamp/"
   });
-  gulp.watch("*.html").on("change", reload);
-  gulp.watch("*.css").on("change", reload);
+  gulp.watch("**/*.html").on("change", reload);
+  gulp.watch("**/*.css").on("change", reload);
 });
